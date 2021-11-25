@@ -49,13 +49,6 @@ pipeline {
             }
         }
 
-        stage('Printing All Global Variables') {
-            steps {
-                sh """
-                env
-                """
-            }
-        }
         
         stage('Environment Analysis') {
 
@@ -83,6 +76,5 @@ pipeline {
             
             }
         }
-
     }   
 }
